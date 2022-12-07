@@ -12,7 +12,7 @@ import net.dv8tion.jda.api.utils.cache.CacheFlag;
 public class Main {
 
     public static void main(String[] args) {
-        JDABuilder builder = JDABuilder.createDefault("OTUwMDI0NzEwMzY2ODI2NTk2.GSmPVX.o7sJ15xfSJU8nrNd97-7QuyPV5mbPvrZlMwtPk")
+        JDABuilder builder = JDABuilder.createDefault("reacted")
                 .enableIntents(GatewayIntent.MESSAGE_CONTENT)
                 .disableCache(CacheFlag.ACTIVITY)
                 .setMemberCachePolicy(MemberCachePolicy.VOICE.or(MemberCachePolicy.OWNER))
