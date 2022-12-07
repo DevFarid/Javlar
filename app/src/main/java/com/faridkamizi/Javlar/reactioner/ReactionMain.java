@@ -19,7 +19,7 @@ public class ReactionMain extends MusicMain {
     public void onMessageReactionAdd(MessageReactionAddEvent event) {
         if (!event.getUser().isBot()) {
             if (event.getChannel().getId().equals("939416664049594378")) {
-                String reId = event.getReaction().getReactionEmote().getId();
+                String reId = event.getReaction().getEmoji().asCustom().getId();
                 switch (reId) {
                     /*  APEX */
                     case "939392731816542238": {
@@ -42,7 +42,7 @@ public class ReactionMain extends MusicMain {
                     }
                 }
             } else if (event.getChannel().getId().equals("935650494452477973")) {
-                String reId = event.getReaction().getReactionEmote().getId();
+                String reId = event.getReaction().getEmoji().asCustom().getId();
                 if (reId.equals("939778831160594453")) {
                     GuildMusicManager musicManager = getGuildAudioPlayer(event.getGuild(), event.getChannel());
                     musicManager.scheduler.pause(musicManager.player, true);
@@ -61,7 +61,7 @@ public class ReactionMain extends MusicMain {
     public void onMessageReactionRemove(MessageReactionRemoveEvent event) {
         if (!event.getUser().isBot()) {
             if (event.getChannel().getId().equals("939416664049594378")) {
-                String reId = event.getReaction().getReactionEmote().getId();
+                String reId = event.getReaction().getEmoji().asCustom().getId();
                 switch (reId) {
                     /*  APEX */
                     case "939392731816542238": {

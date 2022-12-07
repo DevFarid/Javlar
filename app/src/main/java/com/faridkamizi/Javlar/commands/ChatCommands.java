@@ -5,8 +5,9 @@ import com.faridkamizi.Javlar.musicComponents.MusicMain;
 import components.set.Set;
 import components.set.Set1L;
 import net.dv8tion.jda.api.entities.Message;
-import net.dv8tion.jda.api.entities.MessageChannel;
-import net.dv8tion.jda.api.entities.TextChannel;
+import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
+import net.dv8tion.jda.api.entities.channel.middleman.MessageChannel;
+import net.dv8tion.jda.api.entities.emoji.Emoji;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
@@ -101,11 +102,11 @@ public class ChatCommands extends ListenerAdapter {
                           |\t  |\t  |\t  |
                           |\t  |\t  |\t  |
                           V\t  V\t  V\t  V```""").queue(response -> {
-                    response.addReaction("APE:939392731816542238").queue();
-                    response.addReaction("CSGO:939392436952772609").queue();
-                    response.addReaction("F_:939392259097509948").queue();
-                    response.addReaction("RL:939392028750540840").queue();
-                    response.addReaction("pepe_Cross:927405565645307974").queue();
+                    response.addReaction(Emoji.fromCustom("APE", 1049967873977753690L, false)).queue();
+                    response.addReaction(Emoji.fromCustom("CSGO", 1049967558788386837L, false)).queue();
+//                    response.addReaction("F_:939392259097509948").queue();
+                    response.addReaction(Emoji.fromCustom("RL", 1049966891646599198L, false)).queue();
+                    response.addReaction(Emoji.fromCustom("pepe_cross", 1049967725079957504L, false)).queue();
                 });
             }
             super.onMessageReceived(event);

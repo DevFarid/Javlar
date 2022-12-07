@@ -2,7 +2,7 @@ package com.faridkamizi.Javlar.musicComponents;
 
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayerManager;
-import net.dv8tion.jda.api.entities.TextChannel;
+import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 
 /**
  * Holder for both the player and a track scheduler for one guild.
